@@ -1,8 +1,12 @@
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   return (
     <html>
-      <head />
-      <body>{children}</body>
+      <head>
+        <title>Next.js with OpenTelemetry</title>
+      </head>
+      <body>
+        <main>{children}</main>
+      </body>
     </html>
-  )
+  );
 }
